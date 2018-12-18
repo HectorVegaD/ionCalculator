@@ -1,3 +1,92 @@
-page-home {
+.toolbar-background{
+    background-image: linear-gradient(to right, white, rgba(36, 168, 204, .7));
+}
 
+.iconTxT{
+    float: left;
+}
+
+#calculator {
+    width: 35%;
+    min-width: 180px;
+    max-width: 400px;
+    padding: 5px;
+    margin: 0px auto;
+    background-color: rgba(80, 166, 194, 1);
+    border-radius: 5px 5px 15px 15px;
+    box-shadow: -4px 4px 5px #888888;
+}
+
+#outputBox {
+    height: 35px;
+    background-color: rgba(12, 74, 96, .7);
+    text-align: right;
+    font-size: 2em;
+    color: white;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+
+.button {
+    background-color: rgba(80, 119, 134, .7);
+    color: white;
+    border-radius: 25px;
+}
+
+.button:hover {
+    color: black;
+}
+
+#notePad {
+    width: 25%;
+    min-width: 180px;
+    max-width: 400px;
+    padding: 5px;
+    border-style: solid;
+    border-color: rgba(36, 168, 204, .7);
+    margin: 20px auto;
+    height: 200px;
+    position: relative;
+    color: rgb(80, 119, 134);
+}
+
+#notePadTitle{
+    text-align: center;
+    height: 30px;
+}
+
+#notePadBody{
+    position: absolute;
+    overflow-y: scroll;
+    top: 35px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+}
+
+#notePadEntry{
+    height: 35px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    border-style: dashed;
+    border-color: rgba(36, 168, 204, .7);
+    margin: 0px auto 7px auto;
+    white-space: nowrap;
+    font-size: 1.8em;
+}
+
+@media only screen and (max-width: 35em) {
+    #calculator{
+        width: 100%;
+        max-width: none;
+    }
+
+    #notePad{
+        width: 90%;
+        max-width: none;
+    }
+
+    .iconTxT{
+        display: none;
+    }
 }
